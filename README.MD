@@ -53,7 +53,7 @@ function isPalindrom(str) {
 
 ---
 
-##### 2. Tulislah perulangan untuk Fibonacci 
+##### 2. Tulislah perulangan untuk Fibonacci ini
 
 ```javascript
 function generateFibonnacci(n) {
