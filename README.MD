@@ -474,6 +474,47 @@ console.log(twoSum([3, 5, 2, -4, 8, 11], 7))
 
 ---
 
+##### 11. Tulis sebuah fungsi JavaScript untuk menemukan dan mengembalikan bilangan terbesar dalam sebuah larik bilangan bulat.
+
+```javascript
+
+function findLargestNumber(arr) {
+    
+}
+const numbers1 = [12, 5, 27, 8, 16];
+console.log(findLargestNumber(numbers1));  // Output: 27
+```
+
+<details><summary><b>Solution</b></summary>
+
+```javascript
+
+function findLargestNumber(arr) {
+
+  if (arr.length === 0) {
+        return "larik kosong"
+    }
+
+    let largetsNumber = arr[0];
+
+    for (let i =1; i < arr.length; i ++) {
+        if (arr[i] > largetsNumber) {
+            largestNumber = arr[i];
+        }
+    }
+
+    return largestNumber;
+
+}
+
+const numbers2 = [4, 11, 9, 3, 21];
+console.log(findLargestNumber(numbers2));  // Output: 21
+
+```
+</details>
+
+---
+
 
 
 
