@@ -515,7 +515,7 @@ console.log(findLargestNumber(numbers2));  // Output: 21
 
 ---
 
-##### 11. Tulis sebuah fungsi untuk menghitung faktorial dari sebuah bilangan. Faktorial dari n adalah produk semua bilangan bulat positif dari 1 hingga n.
+##### 12. Tulis sebuah fungsi untuk menghitung faktorial dari sebuah bilangan. Faktorial dari n adalah produk semua bilangan bulat positif dari 1 hingga n.
 
 ```javascript
 
@@ -545,6 +545,74 @@ function hitungFaktorial(n) {
 
 expected const hasilFaktorial8 = hitungFaktorial(8);
 console.log("Faktorial dari 8 adalah:", hasilFaktorial8);  // Output: 40320
+
+```
+</details>
+
+---
+
+##### 13. Diberikan dua larik terurut, tulis sebuah fungsi untuk menggabungkan keduanya menjadi sebuah larik terurut. misal [1,3,5] & [2,4,6]
+
+
+```javascript
+
+function mergeSortedArrays(arr1, arr2) {
+
+}
+
+const arr1 = [1, 3, 5];
+const arr2 = [2, 4, 6];
+expected const hasilGabungan = mergeSortedArrays(arr1, arr2);
+console.log("Hasil Gabungan:", hasilGabungan);  // Output: [1, 2, 3, 4, 5, 6]
+
+
+```
+
+<details><summary><b>Solution</b></summary>
+
+```javascript
+
+function mergeSortedArrays(arr1, arr2) {
+    let mergedArray = [];
+    let i = 0;
+    let j = 0;
+
+    while (i < arr1.length && j < arr2.length) {
+        if (arr1[i] < arr2[j]) {
+            mergedArray.push(arr1[i]);
+            i++;
+        } else {
+            mergedArray.push(arr2[j]);
+            j++;
+        }
+    }
+
+    // Menambahkan sisa elemen dari arr1 (jika ada)
+    while (i < arr1.length) {
+        mergedArray.push(arr1[i]);
+        i++;
+    }
+
+    // Menambahkan sisa elemen dari arr2 (jika ada)
+    while (j < arr2.length) {
+        mergedArray.push(arr2[j]);
+        j++;
+    }
+
+    return mergedArray;
+}
+
+// Contoh penggunaan fungsi:
+const arr1 = [1, 3, 5];
+const arr2 = [2, 4, 6];
+const hasilGabungan = mergeSortedArrays(arr1, arr2);
+console.log("Hasil Gabungan:", hasilGabungan);  // Output: [1, 2, 3, 4, 5, 6]
+
+
+const arr1 = [1, 3, 5];
+const arr2 = [2, 4, 6];
+expected const hasilGabungan = mergeSortedArrays(arr1, arr2);
+console.log("Hasil Gabungan:", hasilGabungan);  // Output: [1, 2, 3, 4, 5, 6]
 
 ```
 </details>
