@@ -609,10 +609,51 @@ const hasilGabungan = mergeSortedArrays(arr1, arr2);
 console.log("Hasil Gabungan:", hasilGabungan);  // Output: [1, 2, 3, 4, 5, 6]
 
 
-const arr1 = [1, 3, 5];
-const arr2 = [2, 4, 6];
-expected const hasilGabungan = mergeSortedArrays(arr1, arr2);
-console.log("Hasil Gabungan:", hasilGabungan);  // Output: [1, 2, 3, 4, 5, 6]
+```
+</details>
+
+---
+
+##### 14. Tulis sebuah fungsi untuk memeriksa apakah dua string adalah anagram, yaitu memiliki huruf yang sama dalam urutan yang berbeda. hint: Anagram adalah dua string yang memiliki huruf yang sama, jumlah huruf yang sama, tetapi urutan hurufnya berbeda. Misalnya, "listen" dan "silent"
+
+
+```javascript
+
+function isAnagram(str1, str2) {
+
+}
+
+const string1 = "listen";
+const string2 = "silent";
+const isAnagramResult = isAnagram(string1, string2);
+expected console.log(`Apakah "${string1}" dan "${string2}" anagram?`, isAnagramResult);  // Output: true
+
+
+```
+
+<details><summary><b>Solution</b></summary>
+
+```javascript
+
+function isAnagram(str1, str2) {
+    // Menghapus spasi dan mengonversi ke huruf kecil untuk memastikan keakuratan
+    const cleanStr1 = str1.replace(/\s/g, '').toLowerCase();
+    const cleanStr2 = str2.replace(/\s/g, '').toLowerCase();
+
+    // Mengonversi string menjadi array, mengurutkannya, dan menggabungkannya kembali
+    const sortedStr1 = cleanStr1.split('').sort().join('');
+    const sortedStr2 = cleanStr2.split('').sort().join('');
+
+    // Membandingkan string yang sudah diurutkan
+    return sortedStr1 === sortedStr2;
+}
+
+// Contoh penggunaan fungsi:
+const string1 = "listen";
+const string2 = "silent";
+const isAnagramResult = isAnagram(string1, string2);
+console.log(`Apakah "${string1}" dan "${string2}" anagram?`, isAnagramResult);  // Output: true
+
 
 ```
 </details>
