@@ -515,6 +515,42 @@ console.log(findLargestNumber(numbers2));  // Output: 21
 
 ---
 
+##### 11. Tulis sebuah fungsi untuk menghitung faktorial dari sebuah bilangan. Faktorial dari n adalah produk semua bilangan bulat positif dari 1 hingga n.
+
+```javascript
+
+function hitungFaktorial(n) {
+
+}
+
+expected const hasilFaktorial5 = hitungFaktorial(5);
+console.log("Faktorial dari 5 adalah:", hasilFaktorial5);  // Output: 120
+
+
+```
+
+<details><summary><b>Solution</b></summary>
+
+```javascript
+hint: faktorial yaitu mengalikan semua bilangan dari 1 ke n misal 5 = 5 * 4 * 3 * 2 * 1
+
+
+function hitungFaktorial(n) {
+    if ( n === 0 || n === 1) {
+        return 1;
+    } else {
+        return n * hitungFaktorial(n - 1)
+    }
+}
+
+expected const hasilFaktorial8 = hitungFaktorial(8);
+console.log("Faktorial dari 8 adalah:", hasilFaktorial8);  // Output: 40320
+
+```
+</details>
+
+---
+
 
 
 
