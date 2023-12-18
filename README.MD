@@ -663,8 +663,6 @@ console.log(`Apakah "${string1}" dan "${string2}" anagram?`, isAnagramResult);  
 ##### 15. Diberikan sebuah larik yang mungkin berisi elemen duplikat, tulis sebuah fungsi untuk menghapus elemen duplikat tersebut dan mengembalikan larik baru yang hanya berisi elemen unik.
 
 
-
-
 ```javascript
 
 function removeDuplicates(arr) {
@@ -691,6 +689,60 @@ function removeDuplicates(arr) {
 const inputArray = [1, 2, 2, 3, 4, 4, 5];
 const resultArray = removeDuplicates(inputArray);
 console.log("Array setelah menghapus duplikat:", resultArray);   //  Output [1,2,3,4,5]
+
+
+```
+</details>
+
+---
+
+##### 16. Implementasikan algoritma pengurutan sederhana, seperti pengurutan hitungan (counting sort).
+
+
+```javascript
+
+function countingSort(arr) {
+
+}
+
+expected const inputArray = [4, 2, 3, 1, 4, 2, 3];
+const resultArray = countingSort(inputArray);
+console.log("Array setelah Counting Sort:", resultArray); // Output [1,2,2,3,3,4,4]
+
+```
+
+<details><summary><b>Solution</b></summary>
+
+```javascript
+
+function countingSort(arr) {
+    // Menemukan nilai maksimum dalam larik
+    const max = Math.max(...arr);
+    
+    // Membuat larik hitungan untuk menghitung kemunculan setiap nilai
+    const countArray = Array(max + 1).fill(0);
+
+    // Menghitung kemunculan setiap nilai dalam larik
+    for (let i = 0; i < arr.length; i++) {
+        countArray[arr[i]]++;
+    }
+
+    // Membangun larik hasil berdasarkan kemunculan nilai
+    const sortedArray = [];
+    for (let i = 0; i < countArray.length; i++) {
+        while (countArray[i] > 0) {
+            sortedArray.push(i);
+            countArray[i]--;
+        }
+    }
+
+    return sortedArray;
+}
+
+// Contoh penggunaan fungsi:
+const inputArray = [4, 2, 3, 1, 4, 2, 3];
+const resultArray = countingSort(inputArray);
+console.log("Array setelah Counting Sort:", resultArray);  //  Output [1,2,2,3,3,4,4]
 
 
 ```
