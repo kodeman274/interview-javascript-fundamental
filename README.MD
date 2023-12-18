@@ -750,6 +750,88 @@ console.log("Array setelah Counting Sort:", resultArray);  //  Output [1,2,2,3,3
 
 ---
 
+##### 17. Implementasikan pencarian biner dalam larik terurut. hint: Binary Search adalah metode pencarian efisien yang hanya dapat diterapkan pada larik terurut.
+
+```javascript
+
+function binarySearch(sortedArray, target) {
+    let left = 0;
+    let right = sortedArray.length - 1;
+
+    while (left <= right) {
+        const mid = Math.floor((left + right) / 2);
+
+        if (sortedArray[mid] === target) {
+            return mid; // Nilai ditemukan, kembalikan indeks
+        } else if (sortedArray[mid] < target) {
+            left = mid + 1; // Pencarian di sebelah kanan
+        } else {
+            right = mid - 1; // Pencarian di sebelah kiri
+        }
+    }
+
+    return -1; // Nilai tidak ditemukan
+}
+
+expected// Contoh penggunaan fungsi:
+const sortedArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const targetValue = 7;
+const resultIndex = binarySearch(sortedArray, targetValue);
+
+if (resultIndex !== -1) {
+    console.log(`Nilai ${targetValue} ditemukan pada indeks ${resultIndex}.`);
+} else {
+    console.log(`Nilai ${targetValue} tidak ditemukan dalam larik.`);
+}   // Output  nilai 7 ditemukan pada indeks 6.
+
+
+```
+
+<details><summary><b>Solution</b></summary>
+
+```javascript
+
+function countingSort(arr) {
+    // Menemukan nilai maksimum dalam larik
+    const max = Math.max(...arr);
+    
+    // Membuat larik hitungan untuk menghitung kemunculan setiap nilai
+    const countArray = Array(max + 1).fill(0);
+
+    // Menghitung kemunculan setiap nilai dalam larik
+    for (let i = 0; i < arr.length; i++) {
+        countArray[arr[i]]++;
+    }
+
+    // Membangun larik hasil berdasarkan kemunculan nilai
+    const sortedArray = [];
+    for (let i = 0; i < countArray.length; i++) {
+        while (countArray[i] > 0) {
+            sortedArray.push(i);
+            countArray[i]--;
+        }
+    }
+
+    return sortedArray;
+}
+
+expected// Contoh penggunaan fungsi:
+const sortedArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const targetValue = 7;
+const resultIndex = binarySearch(sortedArray, targetValue);
+
+if (resultIndex !== -1) {
+    console.log(`Nilai ${targetValue} ditemukan pada indeks ${resultIndex}.`);
+} else {
+    console.log(`Nilai ${targetValue} tidak ditemukan dalam larik.`);
+}   // Output  nilai 7 ditemukan pada indeks 6.
+
+
+```
+</details>
+
+---
+
 
 
 
