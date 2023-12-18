@@ -415,8 +415,6 @@ const n = 2;
 const result = isEven(deretAngka, n);
 console.log(`Apakah angka ke-${n} genap? ${result}`);
 
-
-
 ```
 </details>
 
@@ -565,7 +563,6 @@ const arr2 = [2, 4, 6];
 expected const hasilGabungan = mergeSortedArrays(arr1, arr2);
 console.log("Hasil Gabungan:", hasilGabungan);  // Output: [1, 2, 3, 4, 5, 6]
 
-
 ```
 
 <details><summary><b>Solution</b></summary>
@@ -608,14 +605,12 @@ const arr2 = [2, 4, 6];
 const hasilGabungan = mergeSortedArrays(arr1, arr2);
 console.log("Hasil Gabungan:", hasilGabungan);  // Output: [1, 2, 3, 4, 5, 6]
 
-
 ```
 </details>
 
 ---
 
 ##### 14. Tulis sebuah fungsi untuk memeriksa apakah dua string adalah anagram, yaitu memiliki huruf yang sama dalam urutan yang berbeda. hint: Anagram adalah dua string yang memiliki huruf yang sama, jumlah huruf yang sama, tetapi urutan hurufnya berbeda. Misalnya, "listen" dan "silent"
-
 
 ```javascript
 
@@ -627,7 +622,6 @@ const string1 = "listen";
 const string2 = "silent";
 const isAnagramResult = isAnagram(string1, string2);
 expected console.log(`Apakah "${string1}" dan "${string2}" anagram?`, isAnagramResult);  // Output: true
-
 
 ```
 
@@ -653,7 +647,6 @@ const string1 = "listen";
 const string2 = "silent";
 const isAnagramResult = isAnagram(string1, string2);
 console.log(`Apakah "${string1}" dan "${string2}" anagram?`, isAnagramResult);  // Output: true
-
 
 ```
 </details>
@@ -689,7 +682,6 @@ function removeDuplicates(arr) {
 const inputArray = [1, 2, 2, 3, 4, 4, 5];
 const resultArray = removeDuplicates(inputArray);
 console.log("Array setelah menghapus duplikat:", resultArray);   //  Output [1,2,3,4,5]
-
 
 ```
 </details>
@@ -750,7 +742,7 @@ console.log("Array setelah Counting Sort:", resultArray);  //  Output [1,2,2,3,3
 
 ---
 
-##### 17. Implementasikan pencarian biner dalam larik terurut. hint: Binary Search adalah metode pencarian efisien yang hanya dapat diterapkan pada larik terurut.
+##### 17. Implementasikan pencarian biner dalam larik terurut.                                                                              hint: Binary Search adalah metode pencarian efisien yang hanya dapat diterapkan pada larik terurut.
 
 ```javascript
 
@@ -808,6 +800,100 @@ if (resultIndex !== -1) {
     console.log(`Nilai ${targetValue} tidak ditemukan dalam larik.`);
 }   // Output  nilai 7 ditemukan pada indeks 6.
 
+
+```
+</details>
+
+---
+
+##### 18. Implementasikan pencarian dalam graf menggunakan Depth-First Search (DFS).                                                        hint: DFS adalah algoritma pencarian yang digunakan untuk menjelajah atau mencari informasi dalam graf atau struktur data lainnya
+
+```javascript
+class Graph {
+        constructor() {
+
+        }
+
+}
+
+expected // Contoh penggunaan:
+const graph = new Graph();
+
+graph.addVertex('A');
+graph.addVertex('B');
+graph.addVertex('C');
+graph.addVertex('D');
+graph.addVertex('E');
+graph.addEdge('A', 'B');
+graph.addEdge('B', 'C');
+graph.addEdge('C', 'D');
+graph.addEdge('D', 'E');
+graph.addEdge('E', 'A');
+
+const dfsResult = graph.dfs('A');
+console.log('Depth-First Search Result:', dfsResult);
+
+```
+
+<details><summary><b>Solution</b></summary>
+
+```javascript
+
+class Graph {
+    constructor() {
+        this.adjacencyList = {};
+    }
+
+    addVertex(vertex) {
+        if (!this.adjacencyList[vertex]) {
+            this.adjacencyList[vertex] = [];
+        }
+    }
+
+    addEdge(vertex1, vertex2) {
+        this.adjacencyList[vertex1].push(vertex2);
+        this.adjacencyList[vertex2].push(vertex1);
+    }
+
+    dfs(startVertex) {
+        const result = [];
+        const visited = {};
+
+        const dfsTraversal = (vertex) => {
+            if (!vertex) return;
+
+            result.push(vertex);
+            visited[vertex] = true;
+
+            this.adjacencyList[vertex].forEach((neighbor) => {
+                if (!visited[neighbor]) {
+                    dfsTraversal(neighbor);
+                }
+            });
+        };
+
+        dfsTraversal(startVertex);
+
+        return result;
+    }
+}
+
+expected // Contoh penggunaan:
+const graph = new Graph();
+
+graph.addVertex('A');
+graph.addVertex('B');
+graph.addVertex('C');
+graph.addVertex('D');
+graph.addVertex('E');
+graph.addEdge('A', 'B');
+graph.addEdge('B', 'C');
+graph.addEdge('C', 'D');
+graph.addEdge('D', 'E');
+graph.addEdge('E', 'A');
+
+const dfsResult = graph.dfs('A');
+console.log('Depth-First Search Result:', dfsResult);
 
 ```
 </details>
