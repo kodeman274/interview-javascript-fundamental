@@ -900,7 +900,96 @@ console.log('Depth-First Search Result:', dfsResult);
 
 ---
 
+##### 18. Implementasikan pencarian dalam graf menggunakan Breadth-First Search (BFS). hint: BFS adalah algoritma pencarian yang digunakan untuk menjelajah atau mencari informasi dalam graf atau struktur data lainnya
+
+```javascript
+class Graph {
+        constructor() {
+
+        }
+
+}
+
+expected // Contoh penggunaan:
+const graph = new Graph();
+
+graph.addVertex('A');
+graph.addVertex('B');
+graph.addVertex('C');
+graph.addVertex('D');
+graph.addVertex('E');
+graph.addEdge('A', 'B');
+graph.addEdge('B', 'C');
+graph.addEdge('C', 'D');
+graph.addEdge('D', 'E');
+graph.addEdge('E', 'A');
+
+const bfsResult = graph.bfs('A');
+console.log('Breadth-First Search Result:', bfsResult);
+
+```
+
+<details><summary><b>Solution</b></summary>
+
+```javascript
+
+class Graph {
+    constructor() {
+        this.adjacencyList = {};
+    }
+
+    addVertex(vertex) {
+        if (!this.adjacencyList[vertex]) {
+            this.adjacencyList[vertex] = [];
+        }
+    }
+
+    addEdge(vertex1, vertex2) {
+        this.adjacencyList[vertex1].push(vertex2);
+        this.adjacencyList[vertex2].push(vertex1);
+    }
+
+    bfs(startVertex) {
+        const result = [];
+        const visited = {};
+        const queue = [startVertex];
+        visited[startVertex] = true;
+
+        while (queue.length) {
+            const currentVertex = queue.shift();
+            result.push(currentVertex);
+
+            this.adjacencyList[currentVertex].forEach((neighbor) => {
+                if (!visited[neighbor]) {
+                    visited[neighbor] = true;
+                    queue.push(neighbor);
+                }
+            });
+        }
+
+        return result;
+    }
+}
+
+// Contoh penggunaan:
+const graph = new Graph();
+
+graph.addVertex('A');
+graph.addVertex('B');
+graph.addVertex('C');
+graph.addVertex('D');
+graph.addVertex('E');
+graph.addEdge('A', 'B');
+graph.addEdge('B', 'C');
+graph.addEdge('C', 'D');
+graph.addEdge('D', 'E');
+graph.addEdge('E', 'A');
+
+const bfsResult = graph.bfs('A');
+console.log('Breadth-First Search Result:', bfsResult);
 
 
+```
+</details>
 
-
+---
