@@ -900,7 +900,7 @@ console.log('Depth-First Search Result:', dfsResult);
 
 ---
 
-##### 18. Implementasikan pencarian dalam graf menggunakan Breadth-First Search (BFS). hint: BFS adalah algoritma pencarian yang digunakan untuk menjelajah atau mencari informasi dalam graf atau struktur data lainnya
+##### 19. Implementasikan pencarian dalam graf menggunakan Breadth-First Search (BFS). hint: BFS adalah algoritma pencarian yang digunakan untuk menjelajah atau mencari informasi dalam graf atau struktur data lainnya
 
 ```javascript
 class Graph {
