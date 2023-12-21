@@ -993,3 +993,54 @@ console.log('Breadth-First Search Result:', bfsResult);
 </details>
 
 ---
+
+##### 20. Diberikan sebuah larik yang berisi n bilangan bulat dari 0 hingga n, dengan satu bilangan hilang, tulis sebuah fungsi untuk menemukan bilangan yang hilang. hint:  menggunakan konsep XOR (eXclusive OR) => Konsep XOR (eXclusive OR) adalah operasi biner yang menghasilkan nilai 1 pada bit tertentu jika hanya satu dari dua bit yang setara dengan 1. Jika kedua bit adalah 0 atau 1, hasilnya adalah 0.
+
+
+```javascript
+function findMissingNumber(nums) {
+       
+}
+
+expected // Contoh penggunaan:
+const numbers = [0, 1, 3, 4, 5];
+const missingNumber = findMissingNumber(numbers);
+
+console.log('Bilangan yang hilang:', missingNumber);
+```
+
+<details><summary><b>Solution</b></summary>
+
+```javascript
+
+function findMissingNumber(nums) {
+    const n = nums.length + 1; // Ukuran deret seharusnya
+    let xorTotal = 0;
+    
+    // XOR dari semua bilangan dari 1 hingga n
+    for (let i = 1; i <= n; i++) {
+        xorTotal ^= i;
+    }
+
+    // XOR dari semua elemen dalam larik
+    for (const num of nums) {
+        xorTotal ^= num;
+    }
+
+    return xorTotal;
+}
+
+// Contoh penggunaan:
+const numbers = [0, 1, 3, 4, 5];
+const missingNumber = findMissingNumber(numbers);
+
+console.log('Bilangan yang hilang:', missingNumber);
+
+
+```
+</details>
+
+---
+
+
+
