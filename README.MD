@@ -1042,5 +1042,59 @@ console.log('Bilangan yang hilang:', missingNumber);
 
 ---
 
+##### 21. Diberikan larik weights yang menyimpan bobot dari setiap elemen, dan larik values yang menyimpan nilai dari setiap elemen. Implementasikan sebuah fungsi dalam JavaScript untuk menyelesaikan masalah knapsack hint:  Fungsi ini harus mengambil kapasitas maksimal knapsack dan mengembalikan nilai maksimum yang dapat diambil dengan memilih elemen-elemen tertentu
+
+
+```javascript
+function knapsack(weights, values, capacity) {
+  // Implementasi fungsi di sini
+}
+
+// Contoh penggunaan
+const weights = [2, 5, 3, 7, 1];
+const values = [10, 5, 8, 12, 3];
+const capacity = 15;
+
+console.log(knapsack(weights, values, capacity)); // Output yang diharapkan: 28
+
+```
+
+<details><summary><b>Solution</b></summary>
+
+```javascript
+
+function knapsack(weights, values, capacity) {
+  const n = weights.length;
+  const dp = new Array(n + 1).fill(null).map(() => new Array(capacity + 1).fill(0));
+
+  for (let i = 1; i <= n; i++) {
+    for (let w = 1; w <= capacity; w++) {
+      if (weights[i - 1] <= w) {
+        dp[i][w] = Math.max(values[i - 1] + dp[i - 1][w - weights[i - 1]], dp[i - 1][w]);
+      } else {
+        dp[i][w] = dp[i - 1][w];
+      }
+    }
+  }
+
+  return dp[n][capacity];
+}
+
+// Contoh penggunaan
+const weights = [2, 5, 3, 7, 1];
+const values = [10, 5, 8, 12, 3];
+const capacity = 15;
+
+console.log(knapsack(weights, values, capacity)); // Output yang diharapkan: 28
+Fungsi knapsack menggunakan pendekatan Dynamic Programming untuk memecahkan masalah knapsack.
+Matriks dp digunakan untuk menyimpan hasil optimal dari submasalah yang lebih kecil.
+Fungsi melakukan iterasi melalui setiap elemen dan kapasitas, dan membandingkan nilai maksimal yang dapat dicapai dengan atau tanpa elemen tersebut.
+
+
+```
+</details>
+
+---
+
 
 
