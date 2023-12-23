@@ -610,11 +610,13 @@ console.log("Hasil Gabungan:", hasilGabungan);  // Output: [1, 2, 3, 4, 5, 6]
 
 ---
 
-##### 14. Tulis sebuah fungsi untuk memeriksa apakah dua string adalah anagram, yaitu memiliki huruf yang sama dalam urutan yang berbeda. hint: Anagram adalah dua string yang memiliki huruf yang sama, jumlah huruf yang sama, tetapi urutan hurufnya berbeda. Misalnya, "listen" dan "silent"
+##### 14. Tulis sebuah fungsi untuk memeriksa apakah dua string adalah anagram, yaitu memiliki huruf yang sama dalam urutan yang berbeda. 
 
 ```javascript
 
 function isAnagram(str1, str2) {
+
+hint: Anagram adalah dua string yang memiliki huruf yang sama, jumlah huruf yang sama, tetapi urutan hurufnya berbeda. Misalnya, "listen" dan "silent"
 
 }
 
@@ -742,12 +744,13 @@ console.log("Array setelah Counting Sort:", resultArray);  //  Output [1,2,2,3,3
 
 ---
 
-##### 17. Implementasikan pencarian biner dalam larik terurut.                                                                              hint: Binary Search adalah metode pencarian efisien yang hanya dapat diterapkan pada larik terurut.
+##### 17. Implementasikan pencarian biner dalam larik terurut.                                                                             
 
 ```javascript
 
 function binarySearch(sortedArray, target) {
 
+ hint: Binary Search adalah metode pencarian efisien yang hanya dapat diterapkan pada larik terurut.
 
 }
 
@@ -806,11 +809,13 @@ if (resultIndex !== -1) {
 
 ---
 
-##### 18. Implementasikan pencarian dalam graf menggunakan Depth-First Search (DFS).                                                        hint: DFS adalah algoritma pencarian yang digunakan untuk menjelajah atau mencari informasi dalam graf atau struktur data lainnya
+##### 18. Implementasikan pencarian dalam graf menggunakan Depth-First Search (DFS).                                                       
 
 ```javascript
 class Graph {
         constructor() {
+
+           hint: DFS adalah algoritma pencarian yang digunakan untuk menjelajah atau mencari informasi dalam graf atau struktur data lainnya
 
         }
 
@@ -900,12 +905,13 @@ console.log('Depth-First Search Result:', dfsResult);
 
 ---
 
-##### 19. Implementasikan pencarian dalam graf menggunakan Breadth-First Search (BFS). hint: BFS adalah algoritma pencarian yang digunakan untuk menjelajah atau mencari informasi dalam graf atau struktur data lainnya
+##### 19. Implementasikan pencarian dalam graf menggunakan Breadth-First Search (BFS). 
 
 ```javascript
 class Graph {
         constructor() {
 
+hint: BFS adalah algoritma pencarian yang digunakan untuk menjelajah atau mencari informasi dalam graf atau struktur data lainnya
         }
 
 }
@@ -994,11 +1000,13 @@ console.log('Breadth-First Search Result:', bfsResult);
 
 ---
 
-##### 20. Diberikan sebuah larik yang berisi n bilangan bulat dari 0 hingga n, dengan satu bilangan hilang, tulis sebuah fungsi untuk menemukan bilangan yang hilang. hint:  menggunakan konsep XOR (eXclusive OR) => Konsep XOR (eXclusive OR) adalah operasi biner yang menghasilkan nilai 1 pada bit tertentu jika hanya satu dari dua bit yang setara dengan 1. Jika kedua bit adalah 0 atau 1, hasilnya adalah 0.
-
+##### 20. Diberikan sebuah larik yang berisi n bilangan bulat dari 0 hingga n, dengan satu bilangan hilang, tulis sebuah fungsi untuk menemukan bilangan yang hilang.
 
 ```javascript
 function findMissingNumber(nums) {
+
+   hint:  menggunakan konsep XOR (eXclusive OR) => Konsep XOR (eXclusive OR) adalah operasi biner yang menghasilkan nilai 1 pada bit tertentu jika hanya satu dari dua bit yang setara dengan 1. Jika kedua bit adalah 0 atau 1, hasilnya adalah 0.
+
        
 }
 
@@ -1042,11 +1050,13 @@ console.log('Bilangan yang hilang:', missingNumber);
 
 ---
 
-##### 21. Diberikan larik weights yang menyimpan bobot dari setiap elemen, dan larik values yang menyimpan nilai dari setiap elemen. Implementasikan sebuah fungsi dalam JavaScript untuk menyelesaikan masalah knapsack hint:  Fungsi ini harus mengambil kapasitas maksimal knapsack dan mengembalikan nilai maksimum yang dapat diambil dengan memilih elemen-elemen tertentu
+##### 21. Diberikan larik weights yang menyimpan bobot dari setiap elemen, dan larik values yang menyimpan nilai dari setiap elemen. Implementasikan sebuah fungsi dalam JavaScript untuk menyelesaikan masalah knapsack
 
 
 ```javascript
 function knapsack(weights, values, capacity) {
+
+   hint:  Fungsi ini harus mengambil kapasitas maksimal knapsack dan mengembalikan nilai maksimum yang dapat diambil dengan memilih elemen-elemen tertentu
   // Implementasi fungsi di sini
 }
 
