@@ -1038,7 +1038,7 @@ function findMissingNumber(nums) {
     return xorTotal;
 }
 
-// Contoh penggunaan:
+expected // Contoh penggunaan:
 const numbers = [0, 1, 3, 4, 5];
 const missingNumber = findMissingNumber(numbers);
 
@@ -1090,7 +1090,7 @@ function knapsack(weights, values, capacity) {
   return dp[n][capacity];
 }
 
-// Contoh penggunaan
+expected // Contoh penggunaan
 const weights = [2, 5, 3, 7, 1];
 const values = [10, 5, 8, 12, 3];
 const capacity = 15;
