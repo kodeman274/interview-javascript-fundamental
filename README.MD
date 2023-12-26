@@ -7,14 +7,13 @@
 
 ##### 1. Tulislah fungsi untuk isPalindrom menerima string sebagai argument. Fungsi ini membersihkan string dari karakter non-alfanumerik, mengubahnya menjadi huruf kecil, dan kemudian memeriksa apakah string yang dibalik sama dengan string aslinya
 
-
 ```javascript
 function isPalindrom(str) {
   //code
   return
 }
-isPalindrom('katak')); // expected true
-isPalindrom('racecar')); // expected true
+isPalindrom('katak'); // expected true
+isPalindrom('racecar'); // expected true
 isPalindrom('ini terbalik') //expected false
 ```
 
@@ -288,7 +287,7 @@ console.log(balikKata('beca di jalan malioboro'));
 
 ```javascript
 
-function fizzBuzz(n) {
+for() {
 
   //code
   
@@ -316,7 +315,6 @@ id bukan kelipatan 3 atau 5 cetak i
       console.log(i);
     }
   }
-}
 
 console.log(fizzBuzz(20));
 
@@ -393,7 +391,7 @@ expected
 
 ```javascript
 
-function cetakSegitigasSiku(tinggi) {
+function isEven(numbers, n) {
 
   //code
   
@@ -463,7 +461,6 @@ function twoSum(arr, S) {
   return sums;
 
 }
-
 
 console.log(twoSum([3, 5, 2, -4, 8, 11], 7))
 
