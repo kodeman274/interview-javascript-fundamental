@@ -52,7 +52,8 @@ function isPalindrom(str) {
 
 ---
 
-##### 2. Tulislah perulangan untuk Fibonacci ini
+##### 2. Tulislah perulangan untuk Fibonacci 
+hint: fibonacci yaitu deret angka yang diperoleh dengan menjumlahkan dua angka sebelumnya
 
 ```javascript
 function generateFibonnacci(n) {
