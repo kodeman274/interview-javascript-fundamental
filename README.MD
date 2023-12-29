@@ -335,7 +335,7 @@ function cetakSegitigasSiku(tinggi) {
   //code
   
 }
-console.log(etakSegitigasSiku(5));
+console.log(cetakSegitigasSiku(5));
 expected
 *
 **
@@ -358,7 +358,7 @@ function cetakSegitigaSiku(tinggi) {
   }
 }
 
-console.log(etakSegitigasSiku(5));
+console.log(cetakSegitigasSiku(5));
 expected
 *
 **
