@@ -289,6 +289,7 @@ console.log(balikKata('beca di jalan malioboro'));
 ```javascript
 
 for() {
+hint: Fizz dan Buzz mengacu pada angka berapapun yang akan habis bila di bagi 3 dan 5, atau bisa di sebut juga dengan kelipatan.
 
   //code
   
