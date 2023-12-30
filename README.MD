@@ -5,7 +5,7 @@
   <h1>JS Submissions Solutions</h1>
 </div>
 
-##### 1. Tulislah fungsi untuk isPalindrom menerima string sebagai argument. Fungsi ini membersihkan string dari karakter non-alfanumerik, mengubahnya menjadi huruf kecil, dan kemudian memeriksa apakah string yang dibalik sama dengan string aslinya
+##### 1. Tulis fungsi untuk isPalindrom menerima string sebagai argument. Fungsi ini membersihkan string dari karakter non-alfanumerik, mengubahnya menjadi huruf kecil, dan kemudian memeriksa apakah string yang dibalik sama dengan string aslinya
 
 ```javascript
 function isPalindrom(str) {
@@ -52,7 +52,7 @@ function isPalindrom(str) {
 
 ---
 
-##### 2. Tulislah perulangan untuk Fibonacci 
+##### 2. Tulis perulangan untuk Fibonacci 
 
 ```javascript
 function generateFibonnacci(n) {
@@ -105,7 +105,8 @@ console.log(num_Fibonannacci);
 </details>
 
 ---
-##### 3. Tulislah perulangan yang memisahkan angka genap dan ganjil sampai 100 kmmbalikan hasilnya
+
+##### 3. Tulis perulangan yang memisahkan angka genap dan ganjil sampai 100 kmmbalikan hasilnya
 
 ```javascript
 
@@ -147,6 +148,7 @@ console.log({ num_Genap, num_Ganjil })
 </details>
 
 ---
+
 ##### 4. Tulislah perulangan menampilkan bilangan prima
 
 ```javascript
@@ -188,7 +190,7 @@ console.log(num_Prima);
 
 ---
 
-##### 5. Tulislah perulangan yang menampilkan data array yang double
+##### 5. Tulis perulangan yang menampilkan data array yang double
 
 ```javascript
 
@@ -256,7 +258,7 @@ console.log(numArray);
 
 ---
 
-##### 6. Tulislah fungsi yang menampilkan kata yang dibalik (reverse)
+##### 6. Tulis fungsi yang menampilkan kata yang dibalik (reverse)
 
 ```javascript
 
@@ -295,7 +297,7 @@ hint: Fizz dan Buzz mengacu pada angka berapapun yang akan habis bila di bagi 3 
   
 }
 console.log(fizzBuzz(20));
-expected :
+expected 
 Jika kelipatan 3 dan 5, cetak fizzbuzz
 jika kelipatan 3 tapi bukan 5 cetak fizz
 jika kelipatan 5 tapi bukan 3, cetak buzz
@@ -320,13 +322,12 @@ id bukan kelipatan 3 atau 5 cetak i
 
 console.log(fizzBuzz(20));
 
-
 ```
 </details>
 
 ---
 
-##### 8. Tulislah fungsi untuk cetakSegitigasSiku
+##### 8. Tulis fungsi untuk cetakSegitigasSiku
 
 ```javascript
 
@@ -389,7 +390,8 @@ expected
 </details>
 
 ---
-##### 9. Tulislah fungsi untuk isEven(numbers, n), tentukan apakah element atau digit ke n dalam sebuah array deret adalah bilangan genap
+
+##### 9. Tulis fungsi untuk isEven(numbers, n), tentukan apakah element atau digit ke n dalam sebuah array deret adalah bilangan genap
 
 ```javascript
 
@@ -420,8 +422,7 @@ console.log(`Apakah angka ke-${n} genap? ${result}`);
 
 ---
 
-
-##### 10. Tulislah fungsi TwoSum jika arraynya adalah [3, 5, 2, -4, 8, 11] dan jumlahnya 7, program Anda harus mengembalikan [[11, -4], [2, 5]] karena 11 + -4 = 7 dan 2 + 5 = 7
+##### 10. Tulis fungsi TwoSum jika arraynya adalah [3, 5, 2, -4, 8, 11] dan jumlahnya 7, program Anda harus mengembalikan [[11, -4], [2, 5]] karena 11 + -4 = 7 dan 2 + 5 = 7
 
 ```javascript
 
@@ -549,7 +550,6 @@ console.log("Faktorial dari 8 adalah:", hasilFaktorial8);  // Output: 40320
 ---
 
 ##### 13. Diberikan dua larik terurut, tulis sebuah fungsi untuk menggabungkan keduanya menjadi sebuah larik terurut. misal [1,3,5] & [2,4,6]
-
 
 ```javascript
 
@@ -690,7 +690,6 @@ console.log("Array setelah menghapus duplikat:", resultArray);   //  Output [1,2
 ---
 
 ##### 16. Implementasikan algoritma pengurutan sederhana, seperti pengurutan hitungan (counting sort).
-
 
 ```javascript
 
