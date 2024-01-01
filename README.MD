@@ -149,7 +149,7 @@ console.log({ num_Genap, num_Ganjil })
 
 ---
 
-##### 4. Tulislah perulangan menampilkan bilangan prima
+##### 4. Tulis perulangan menampilkan bilangan prima
 
 ```javascript
 
@@ -286,7 +286,7 @@ console.log(balikKata('beca di jalan malioboro'));
 
 ---
 
-##### 7. Tulislah fungsi untuk Fizz Buzz
+##### 7. Tulis perulangan untuk Fizz Buzz
 
 ```javascript
 
