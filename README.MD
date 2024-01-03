@@ -549,7 +549,7 @@ console.log("Faktorial dari 8 adalah:", hasilFaktorial8);  // Output: 40320
 
 ---
 
-##### 13. Diberikan dua larik terurut, tulis sebuah fungsi untuk menggabungkan keduanya menjadi sebuah larik terurut. misal [1,3,5] & [2,4,6]
+##### 13. terdapat dua larik terurut, tulis sebuah fungsi untuk menggabungkan keduanya menjadi sebuah larik terurut. misal [1,3,5] & [2,4,6]
 
 ```javascript
 
@@ -654,7 +654,7 @@ console.log(`Apakah "${string1}" dan "${string2}" anagram?`, isAnagramResult);  
 
 ---
 
-##### 15. Diberikan sebuah larik yang mungkin berisi elemen duplikat, tulis sebuah fungsi untuk menghapus elemen duplikat tersebut dan mengembalikan larik baru yang hanya berisi elemen unik.
+##### 15. terdapat sebuah larik yang mungkin berisi elemen duplikat, tulis sebuah fungsi untuk menghapus elemen duplikat tersebut dan mengembalikan larik baru yang hanya berisi elemen unik.
 
 
 ```javascript
@@ -998,7 +998,7 @@ console.log('Breadth-First Search Result:', bfsResult);
 
 ---
 
-##### 20. Diberikan sebuah larik yang berisi n bilangan bulat dari 0 hingga n, dengan satu bilangan hilang, tulis sebuah fungsi untuk menemukan bilangan yang hilang.
+##### 20. terdapat sebuah larik yang berisi n bilangan bulat dari 0 hingga n, dengan satu bilangan hilang, tulis sebuah fungsi untuk menemukan bilangan yang hilang.
 
 ```javascript
 function findMissingNumber(nums) {
@@ -1048,7 +1048,7 @@ console.log('Bilangan yang hilang:', missingNumber);
 
 ---
 
-##### 21. Diberikan larik weights yang menyimpan bobot dari setiap elemen, dan larik values yang menyimpan nilai dari setiap elemen. Implementasikan sebuah fungsi dalam JavaScript untuk menyelesaikan masalah knapsack
+##### 21. terdapat larik weights yang menyimpan bobot dari setiap elemen, dan larik values yang menyimpan nilai dari setiap elemen. Implementasikan sebuah fungsi dalam JavaScript untuk menyelesaikan masalah knapsack
 
 
 ```javascript
