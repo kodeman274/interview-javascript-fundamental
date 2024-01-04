@@ -8,19 +8,19 @@
 ##### 1. Tulis fungsi untuk isPalindrom menerima string sebagai argument. Fungsi ini membersihkan string dari karakter non-alfanumerik, mengubahnya menjadi huruf kecil, dan kemudian memeriksa apakah string yang dibalik sama dengan string aslinya
 
 ```javascript
-function isPalindrom(str) {
+const isPalindrom = (str) => {
   //code
-  return
-}
-isPalindrom('katak'); // expected true
-isPalindrom('racecar'); // expected true
-isPalindrom('ini terbalik') //expected false
+  return;
+};
+isPalindrom("katak"); // expected true
+isPalindrom("racecar"); // expected true
+isPalindrom("ini terbalik"); //expected false
 ```
 
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-function isPalindrom(str) {
+const isPalindrom = (str) => {
   str = str.toLowerCase();
   const alphanumericsChars = 'abcdefghijklmnopqrstupwxyz0123456789';
 
@@ -52,7 +52,7 @@ function isPalindrom(str) {
 
 ---
 
-##### 2. Tulis perulangan untuk Fibonacci 
+##### 2. Tulis perulangan untuk Fibonacci
 
 ```javascript
 function generateFibonnacci(n) {
@@ -114,7 +114,7 @@ console.log(num_Fibonannacci);
 for() {
 
   //code
-  
+
 }
 console.log({ num_Genap, num_Ganjil }); expected num_genap : 0,2,4,6,8,.., num_ganjil: 1,3,5,7,9,11,13,..
 ```
@@ -145,6 +145,7 @@ for (let i = 0; i <= 100; i++) {
 }
 console.log({ num_Genap, num_Ganjil })
 ```
+
 </details>
 
 ---
@@ -157,7 +158,7 @@ console.log({ num_Genap, num_Ganjil })
 for() {
 
   //code
-  
+
 }
 console.log(num_Prima); expected 2,3,5,7,11,13,17,19,...
 
@@ -166,7 +167,6 @@ console.log(num_Prima); expected 2,3,5,7,11,13,17,19,...
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-
 // menggunakan if else dan spread operator
 
 let num_Prima = [];
@@ -198,7 +198,7 @@ const dataArrayy = [9, 3, 6, 4, 2, 5, 6, 3, 1, 2, 7, 8, 8, 6, 5, 22, 7];
 for() {
 
   //code
-  
+
 }
 console.log(numArray); expected 9,3,6,4,2,5,1,7,8,22
 ```
@@ -265,7 +265,7 @@ console.log(numArray);
 function balikKata(kata) {
 
   //code
-  
+
 }
 console.log(balikKata('beca di jalan malioboro')); expected oroboilam nalaj aceb
 ```
@@ -273,15 +273,13 @@ console.log(balikKata('beca di jalan malioboro')); expected oroboilam nalaj aceb
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-
 function balikKata(kata) {
-  return kata.split('').reverse().join('');
+  return kata.split("").reverse().join("");
 }
 
-console.log(balikKata('beca di jalan malioboro'));
-
-
+console.log(balikKata("beca di jalan malioboro"));
 ```
+
 </details>
 
 ---
@@ -294,10 +292,10 @@ for() {
 hint: Fizz dan Buzz mengacu pada angka berapapun yang akan habis bila di bagi 3 dan 5, atau bisa di sebut juga dengan kelipatan.
 
   //code
-  
+
 }
 console.log(fizzBuzz(20));
-expected 
+expected
 Jika kelipatan 3 dan 5, cetak fizzbuzz
 jika kelipatan 3 tapi bukan 5 cetak fizz
 jika kelipatan 5 tapi bukan 3, cetak buzz
@@ -307,22 +305,21 @@ id bukan kelipatan 3 atau 5 cetak i
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-
-  for (let i = 1; i <= n; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      console.log('FizzBuzz');
-    } else if (i % 3 === 0) {
-      console.log('Fizz');
-    } else if (i % 5 === 0) {
-      console.log('Buzz');
-    } else {
-      console.log(i);
-    }
+for (let i = 1; i <= n; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
   }
+}
 
 console.log(fizzBuzz(20));
-
 ```
+
 </details>
 
 ---
@@ -334,7 +331,7 @@ console.log(fizzBuzz(20));
 function cetakSegitigasSiku(tinggi) {
 
   //code
-  
+
 }
 console.log(cetakSegitigasSiku(5));
 expected
@@ -387,6 +384,7 @@ expected
 
 
 ```
+
 </details>
 
 ---
@@ -394,11 +392,8 @@ expected
 ##### 9. Tulis fungsi untuk isEven(numbers, n), tentukan apakah element atau digit ke n dalam sebuah array deret adalah bilangan genap
 
 ```javascript
-
 function isEven(numbers, n) {
-
   //code
-  
 }
 console.log(`Apakah angka ke-${n} genap? ${result}`);
 ```
@@ -416,8 +411,8 @@ const n = 2;
 
 const result = isEven(deretAngka, n);
 console.log(`Apakah angka ke-${n} genap? ${result}`);
-
 ```
+
 </details>
 
 ---
@@ -430,8 +425,8 @@ function twoSum(arr, S){
 
   //code
 hint: Pendekatan yang simpel terhadap masalah ini adalah dengan mengulang setiap angka dan kemudian
-mengulangi lagi melalui array 
-  
+mengulangi lagi melalui array
+
 }
 console.log(twoSum([3, 5, 2, -4, 8, 11], 7))
 ```
@@ -442,32 +437,26 @@ console.log(twoSum([3, 5, 2, -4, 8, 11], 7))
 // fungsi penjumlahan dua kita yang akan dikembalikan
 // semua pasangan dalam array yang berjumlah S
 function twoSum(arr, S) {
-
   var sums = [];
 
-// periksa setiap elemen dalam array
-  for (var i = 0; i < arr.length; i++) { 
-
-// tentukan apakah kedua elemen ini berjumlah S
+  // periksa setiap elemen dalam array
+  for (var i = 0; i < arr.length; i++) {
+    // tentukan apakah kedua elemen ini berjumlah S
     for (var j = i + 1; j < arr.length; j++) {
-
       // tentukan apakah kedua elemen ini berjumlah S
       if (arr[i] + arr[j] === S) {
         sums.push([arr[i], arr[j]]);
       }
-
     }
-
   }
 
   // mengembalikan semua pasangan bilangan bulat yang berjumlah S
   return sums;
-
 }
 
-console.log(twoSum([3, 5, 2, -4, 8, 11], 7))
-
+console.log(twoSum([3, 5, 2, -4, 8, 11], 7));
 ```
+
 </details>
 
 ---
@@ -475,40 +464,34 @@ console.log(twoSum([3, 5, 2, -4, 8, 11], 7))
 ##### 11. Tulis sebuah fungsi JavaScript untuk menemukan dan mengembalikan bilangan terbesar dalam sebuah larik bilangan bulat.
 
 ```javascript
-
-function findLargestNumber(arr) {
-    
-}
+function findLargestNumber(arr) {}
 const numbers1 = [12, 5, 27, 8, 16];
-console.log(findLargestNumber(numbers1));  // Output: 27
+console.log(findLargestNumber(numbers1)); // Output: 27
 ```
 
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-
 function findLargestNumber(arr) {
-
   if (arr.length === 0) {
-        return "larik kosong"
+    return "larik kosong";
+  }
+
+  let largetsNumber = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > largetsNumber) {
+      largestNumber = arr[i];
     }
+  }
 
-    let largetsNumber = arr[0];
-
-    for (let i =1; i < arr.length; i ++) {
-        if (arr[i] > largetsNumber) {
-            largestNumber = arr[i];
-        }
-    }
-
-    return largestNumber;
-
+  return largestNumber;
 }
 
 const numbers2 = [4, 11, 9, 3, 21];
-console.log(findLargestNumber(numbers2));  // Output: 21
-
+console.log(findLargestNumber(numbers2)); // Output: 21
 ```
+
 </details>
 
 ---
@@ -545,6 +528,7 @@ expected const hasilFaktorial8 = hitungFaktorial(8);
 console.log("Faktorial dari 8 adalah:", hasilFaktorial8);  // Output: 40320
 
 ```
+
 </details>
 
 ---
@@ -567,49 +551,48 @@ console.log("Hasil Gabungan:", hasilGabungan);  // Output: [1, 2, 3, 4, 5, 6]
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-
 function mergeSortedArrays(arr1, arr2) {
-    let mergedArray = [];
-    let i = 0;
-    let j = 0;
+  let mergedArray = [];
+  let i = 0;
+  let j = 0;
 
-    while (i < arr1.length && j < arr2.length) {
-        if (arr1[i] < arr2[j]) {
-            mergedArray.push(arr1[i]);
-            i++;
-        } else {
-            mergedArray.push(arr2[j]);
-            j++;
-        }
+  while (i < arr1.length && j < arr2.length) {
+    if (arr1[i] < arr2[j]) {
+      mergedArray.push(arr1[i]);
+      i++;
+    } else {
+      mergedArray.push(arr2[j]);
+      j++;
     }
+  }
 
-    // Menambahkan sisa elemen dari arr1 (jika ada)
-    while (i < arr1.length) {
-        mergedArray.push(arr1[i]);
-        i++;
-    }
+  // Menambahkan sisa elemen dari arr1 (jika ada)
+  while (i < arr1.length) {
+    mergedArray.push(arr1[i]);
+    i++;
+  }
 
-    // Menambahkan sisa elemen dari arr2 (jika ada)
-    while (j < arr2.length) {
-        mergedArray.push(arr2[j]);
-        j++;
-    }
+  // Menambahkan sisa elemen dari arr2 (jika ada)
+  while (j < arr2.length) {
+    mergedArray.push(arr2[j]);
+    j++;
+  }
 
-    return mergedArray;
+  return mergedArray;
 }
 
 // Contoh penggunaan fungsi:
 const arr1 = [1, 3, 5];
 const arr2 = [2, 4, 6];
 const hasilGabungan = mergeSortedArrays(arr1, arr2);
-console.log("Hasil Gabungan:", hasilGabungan);  // Output: [1, 2, 3, 4, 5, 6]
-
+console.log("Hasil Gabungan:", hasilGabungan); // Output: [1, 2, 3, 4, 5, 6]
 ```
+
 </details>
 
 ---
 
-##### 14. Tulis sebuah fungsi untuk memeriksa apakah dua string adalah anagram, yaitu memiliki huruf yang sama dalam urutan yang berbeda. 
+##### 14. Tulis sebuah fungsi untuk memeriksa apakah dua string adalah anagram, yaitu memiliki huruf yang sama dalam urutan yang berbeda.
 
 ```javascript
 
@@ -629,33 +612,31 @@ expected console.log(`Apakah "${string1}" dan "${string2}" anagram?`, isAnagramR
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-
 function isAnagram(str1, str2) {
-    // Menghapus spasi dan mengonversi ke huruf kecil untuk memastikan keakuratan
-    const cleanStr1 = str1.replace(/\s/g, '').toLowerCase();
-    const cleanStr2 = str2.replace(/\s/g, '').toLowerCase();
+  // Menghapus spasi dan mengonversi ke huruf kecil untuk memastikan keakuratan
+  const cleanStr1 = str1.replace(/\s/g, "").toLowerCase();
+  const cleanStr2 = str2.replace(/\s/g, "").toLowerCase();
 
-    // Mengonversi string menjadi array, mengurutkannya, dan menggabungkannya kembali
-    const sortedStr1 = cleanStr1.split('').sort().join('');
-    const sortedStr2 = cleanStr2.split('').sort().join('');
+  // Mengonversi string menjadi array, mengurutkannya, dan menggabungkannya kembali
+  const sortedStr1 = cleanStr1.split("").sort().join("");
+  const sortedStr2 = cleanStr2.split("").sort().join("");
 
-    // Membandingkan string yang sudah diurutkan
-    return sortedStr1 === sortedStr2;
+  // Membandingkan string yang sudah diurutkan
+  return sortedStr1 === sortedStr2;
 }
 
 // Contoh penggunaan fungsi:
 const string1 = "listen";
 const string2 = "silent";
 const isAnagramResult = isAnagram(string1, string2);
-console.log(`Apakah "${string1}" dan "${string2}" anagram?`, isAnagramResult);  // Output: true
-
+console.log(`Apakah "${string1}" dan "${string2}" anagram?`, isAnagramResult); // Output: true
 ```
+
 </details>
 
 ---
 
 ##### 15. terdapat sebuah larik yang mungkin berisi elemen duplikat, tulis sebuah fungsi untuk menghapus elemen duplikat tersebut dan mengembalikan larik baru yang hanya berisi elemen unik.
-
 
 ```javascript
 
@@ -672,19 +653,18 @@ console.log("Array setelah menghapus duplikat:", resultArray); // Output [1,2,3,
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-
 function removeDuplicates(arr) {
-    // Menggunakan Set untuk mendapatkan elemen unik
-    const uniqueArray = [...new Set(arr)];
-    return uniqueArray;
+  // Menggunakan Set untuk mendapatkan elemen unik
+  const uniqueArray = [...new Set(arr)];
+  return uniqueArray;
 }
 
 // Contoh penggunaan fungsi:
 const inputArray = [1, 2, 2, 3, 4, 4, 5];
 const resultArray = removeDuplicates(inputArray);
-console.log("Array setelah menghapus duplikat:", resultArray);   //  Output [1,2,3,4,5]
-
+console.log("Array setelah menghapus duplikat:", resultArray); //  Output [1,2,3,4,5]
 ```
+
 </details>
 
 ---
@@ -706,43 +686,41 @@ console.log("Array setelah Counting Sort:", resultArray); // Output [1,2,2,3,3,4
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-
 function countingSort(arr) {
-    // Menemukan nilai maksimum dalam larik
-    const max = Math.max(...arr);
-    
-    // Membuat larik hitungan untuk menghitung kemunculan setiap nilai
-    const countArray = Array(max + 1).fill(0);
+  // Menemukan nilai maksimum dalam larik
+  const max = Math.max(...arr);
 
-    // Menghitung kemunculan setiap nilai dalam larik
-    for (let i = 0; i < arr.length; i++) {
-        countArray[arr[i]]++;
+  // Membuat larik hitungan untuk menghitung kemunculan setiap nilai
+  const countArray = Array(max + 1).fill(0);
+
+  // Menghitung kemunculan setiap nilai dalam larik
+  for (let i = 0; i < arr.length; i++) {
+    countArray[arr[i]]++;
+  }
+
+  // Membangun larik hasil berdasarkan kemunculan nilai
+  const sortedArray = [];
+  for (let i = 0; i < countArray.length; i++) {
+    while (countArray[i] > 0) {
+      sortedArray.push(i);
+      countArray[i]--;
     }
+  }
 
-    // Membangun larik hasil berdasarkan kemunculan nilai
-    const sortedArray = [];
-    for (let i = 0; i < countArray.length; i++) {
-        while (countArray[i] > 0) {
-            sortedArray.push(i);
-            countArray[i]--;
-        }
-    }
-
-    return sortedArray;
+  return sortedArray;
 }
 
 // Contoh penggunaan fungsi:
 const inputArray = [4, 2, 3, 1, 4, 2, 3];
 const resultArray = countingSort(inputArray);
-console.log("Array setelah Counting Sort:", resultArray);  //  Output [1,2,2,3,3,4,4]
-
-
+console.log("Array setelah Counting Sort:", resultArray); //  Output [1,2,2,3,3,4,4]
 ```
+
 </details>
 
 ---
 
-##### 17. Implementasikan pencarian biner dalam larik terurut.                                                                             
+##### 17. Implementasikan pencarian biner dalam larik terurut.
 
 ```javascript
 
@@ -769,45 +747,42 @@ if (resultIndex !== -1) {
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-
 function binarySearch(sortedArray, target) {
-    let left = 0;
-    let right = sortedArray.length - 1;
+  let left = 0;
+  let right = sortedArray.length - 1;
 
-    while (left <= right) {
-        const mid = Math.floor((left + right) / 2);
+  while (left <= right) {
+    const mid = Math.floor((left + right) / 2);
 
-        if (sortedArray[mid] === target) {
-            return mid; // Nilai ditemukan, kembalikan indeks
-        } else if (sortedArray[mid] < target) {
-            left = mid + 1; // Pencarian di sebelah kanan
-        } else {
-            right = mid - 1; // Pencarian di sebelah kiri
-        }
+    if (sortedArray[mid] === target) {
+      return mid; // Nilai ditemukan, kembalikan indeks
+    } else if (sortedArray[mid] < target) {
+      left = mid + 1; // Pencarian di sebelah kanan
+    } else {
+      right = mid - 1; // Pencarian di sebelah kiri
     }
+  }
 
-    return -1; // Nilai tidak ditemukan
+  return -1; // Nilai tidak ditemukan
 }
 
-
-expected// Contoh penggunaan fungsi:
+expected; // Contoh penggunaan fungsi:
 const sortedArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const targetValue = 7;
 const resultIndex = binarySearch(sortedArray, targetValue);
 
 if (resultIndex !== -1) {
-    console.log(`Nilai ${targetValue} ditemukan pada indeks ${resultIndex}.`);
+  console.log(`Nilai ${targetValue} ditemukan pada indeks ${resultIndex}.`);
 } else {
-    console.log(`Nilai ${targetValue} tidak ditemukan dalam larik.`);
-}   // Output  nilai 7 ditemukan pada indeks 6.
-
-
+  console.log(`Nilai ${targetValue} tidak ditemukan dalam larik.`);
+} // Output  nilai 7 ditemukan pada indeks 6.
 ```
+
 </details>
 
 ---
 
-##### 18. Implementasikan pencarian dalam graf menggunakan Depth-First Search (DFS).                                                       
+##### 18. Implementasikan pencarian dalam graf menggunakan Depth-First Search (DFS).
 
 ```javascript
 class Graph {
@@ -841,69 +816,68 @@ console.log('Depth-First Search Result:', dfsResult);
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-
 class Graph {
-    constructor() {
-        this.adjacencyList = {};
-    }
+  constructor() {
+    this.adjacencyList = {};
+  }
 
-    addVertex(vertex) {
-        if (!this.adjacencyList[vertex]) {
-            this.adjacencyList[vertex] = [];
+  addVertex(vertex) {
+    if (!this.adjacencyList[vertex]) {
+      this.adjacencyList[vertex] = [];
+    }
+  }
+
+  addEdge(vertex1, vertex2) {
+    this.adjacencyList[vertex1].push(vertex2);
+    this.adjacencyList[vertex2].push(vertex1);
+  }
+
+  dfs(startVertex) {
+    const result = [];
+    const visited = {};
+
+    const dfsTraversal = (vertex) => {
+      if (!vertex) return;
+
+      result.push(vertex);
+      visited[vertex] = true;
+
+      this.adjacencyList[vertex].forEach((neighbor) => {
+        if (!visited[neighbor]) {
+          dfsTraversal(neighbor);
         }
-    }
+      });
+    };
 
-    addEdge(vertex1, vertex2) {
-        this.adjacencyList[vertex1].push(vertex2);
-        this.adjacencyList[vertex2].push(vertex1);
-    }
+    dfsTraversal(startVertex);
 
-    dfs(startVertex) {
-        const result = [];
-        const visited = {};
-
-        const dfsTraversal = (vertex) => {
-            if (!vertex) return;
-
-            result.push(vertex);
-            visited[vertex] = true;
-
-            this.adjacencyList[vertex].forEach((neighbor) => {
-                if (!visited[neighbor]) {
-                    dfsTraversal(neighbor);
-                }
-            });
-        };
-
-        dfsTraversal(startVertex);
-
-        return result;
-    }
+    return result;
+  }
 }
 
-expected // Contoh penggunaan:
+expected; // Contoh penggunaan:
 const graph = new Graph();
 
-graph.addVertex('A');
-graph.addVertex('B');
-graph.addVertex('C');
-graph.addVertex('D');
-graph.addVertex('E');
-graph.addEdge('A', 'B');
-graph.addEdge('B', 'C');
-graph.addEdge('C', 'D');
-graph.addEdge('D', 'E');
-graph.addEdge('E', 'A');
+graph.addVertex("A");
+graph.addVertex("B");
+graph.addVertex("C");
+graph.addVertex("D");
+graph.addVertex("E");
+graph.addEdge("A", "B");
+graph.addEdge("B", "C");
+graph.addEdge("C", "D");
+graph.addEdge("D", "E");
+graph.addEdge("E", "A");
 
-const dfsResult = graph.dfs('A');
-console.log('Depth-First Search Result:', dfsResult);
-
+const dfsResult = graph.dfs("A");
+console.log("Depth-First Search Result:", dfsResult);
 ```
+
 </details>
 
 ---
 
-##### 19. Implementasikan pencarian dalam graf menggunakan Breadth-First Search (BFS). 
+##### 19. Implementasikan pencarian dalam graf menggunakan Breadth-First Search (BFS).
 
 ```javascript
 class Graph {
@@ -936,64 +910,62 @@ console.log('Breadth-First Search Result:', bfsResult);
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-
 class Graph {
-    constructor() {
-        this.adjacencyList = {};
-    }
+  constructor() {
+    this.adjacencyList = {};
+  }
 
-    addVertex(vertex) {
-        if (!this.adjacencyList[vertex]) {
-            this.adjacencyList[vertex] = [];
+  addVertex(vertex) {
+    if (!this.adjacencyList[vertex]) {
+      this.adjacencyList[vertex] = [];
+    }
+  }
+
+  addEdge(vertex1, vertex2) {
+    this.adjacencyList[vertex1].push(vertex2);
+    this.adjacencyList[vertex2].push(vertex1);
+  }
+
+  bfs(startVertex) {
+    const result = [];
+    const visited = {};
+    const queue = [startVertex];
+    visited[startVertex] = true;
+
+    while (queue.length) {
+      const currentVertex = queue.shift();
+      result.push(currentVertex);
+
+      this.adjacencyList[currentVertex].forEach((neighbor) => {
+        if (!visited[neighbor]) {
+          visited[neighbor] = true;
+          queue.push(neighbor);
         }
+      });
     }
 
-    addEdge(vertex1, vertex2) {
-        this.adjacencyList[vertex1].push(vertex2);
-        this.adjacencyList[vertex2].push(vertex1);
-    }
-
-    bfs(startVertex) {
-        const result = [];
-        const visited = {};
-        const queue = [startVertex];
-        visited[startVertex] = true;
-
-        while (queue.length) {
-            const currentVertex = queue.shift();
-            result.push(currentVertex);
-
-            this.adjacencyList[currentVertex].forEach((neighbor) => {
-                if (!visited[neighbor]) {
-                    visited[neighbor] = true;
-                    queue.push(neighbor);
-                }
-            });
-        }
-
-        return result;
-    }
+    return result;
+  }
 }
 
 // Contoh penggunaan:
 const graph = new Graph();
 
-graph.addVertex('A');
-graph.addVertex('B');
-graph.addVertex('C');
-graph.addVertex('D');
-graph.addVertex('E');
-graph.addEdge('A', 'B');
-graph.addEdge('B', 'C');
-graph.addEdge('C', 'D');
-graph.addEdge('D', 'E');
-graph.addEdge('E', 'A');
+graph.addVertex("A");
+graph.addVertex("B");
+graph.addVertex("C");
+graph.addVertex("D");
+graph.addVertex("E");
+graph.addEdge("A", "B");
+graph.addEdge("B", "C");
+graph.addEdge("C", "D");
+graph.addEdge("D", "E");
+graph.addEdge("E", "A");
 
-const bfsResult = graph.bfs('A');
-console.log('Breadth-First Search Result:', bfsResult);
-
-
+const bfsResult = graph.bfs("A");
+console.log("Breadth-First Search Result:", bfsResult);
 ```
+
 </details>
 
 ---
@@ -1005,7 +977,7 @@ function findMissingNumber(nums) {
 
    hint:  menggunakan konsep XOR (eXclusive OR) => Konsep XOR (eXclusive OR) adalah operasi biner yang menghasilkan nilai 1 pada bit tertentu jika hanya satu dari dua bit yang setara dengan 1. Jika kedua bit adalah 0 atau 1, hasilnya adalah 0.
 
-       
+
 }
 
 expected // Contoh penggunaan:
@@ -1018,38 +990,35 @@ console.log('Bilangan yang hilang:', missingNumber);
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-
 function findMissingNumber(nums) {
-    const n = nums.length + 1; // Ukuran deret seharusnya
-    let xorTotal = 0;
-    
-    // XOR dari semua bilangan dari 1 hingga n
-    for (let i = 1; i <= n; i++) {
-        xorTotal ^= i;
-    }
+  const n = nums.length + 1; // Ukuran deret seharusnya
+  let xorTotal = 0;
 
-    // XOR dari semua elemen dalam larik
-    for (const num of nums) {
-        xorTotal ^= num;
-    }
+  // XOR dari semua bilangan dari 1 hingga n
+  for (let i = 1; i <= n; i++) {
+    xorTotal ^= i;
+  }
 
-    return xorTotal;
+  // XOR dari semua elemen dalam larik
+  for (const num of nums) {
+    xorTotal ^= num;
+  }
+
+  return xorTotal;
 }
 
-expected // Contoh penggunaan:
+expected; // Contoh penggunaan:
 const numbers = [0, 1, 3, 4, 5];
 const missingNumber = findMissingNumber(numbers);
 
-console.log('Bilangan yang hilang:', missingNumber);
-
-
+console.log("Bilangan yang hilang:", missingNumber);
 ```
+
 </details>
 
 ---
 
 ##### 21. terdapat larik weights yang menyimpan bobot dari setiap elemen, dan larik values yang menyimpan nilai dari setiap elemen. Implementasikan sebuah fungsi dalam JavaScript untuk menyelesaikan masalah knapsack
-
 
 ```javascript
 function knapsack(weights, values, capacity) {
@@ -1100,9 +1069,7 @@ Fungsi melakukan iterasi melalui setiap elemen dan kapasitas, dan membandingkan 
 
 
 ```
+
 </details>
 
 ---
-
-
-
