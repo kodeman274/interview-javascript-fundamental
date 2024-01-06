@@ -41,7 +41,7 @@ console.log(isPalindrom('katak'));
 
 cara lain:
 // pakai regex
-function isPalindrom(str) {
+const isPalindrom = () => {
   // Menghapus karakter non-alfanumerik dan mengonversi ke huruf kecil
   str = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
 
@@ -57,7 +57,7 @@ function isPalindrom(str) {
 ##### 2. Tulis perulangan untuk Fibonacci
 
 ```javascript
-function generateFibonnacci(n) {
+const generateFibonnacci = (n) => {
 hint: fibonacci yaitu deret angka yang diperoleh dengan menjumlahkan dua angka sebelumnya
 
   //code
@@ -69,7 +69,7 @@ console.log(generateFibonnacci(10)) expected 0,1,1,2,3,5,8,13
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-function generateFibonnacci(n) {
+const generateFibonnacci = (n) => {
   let num_Fibonannacci = [];
   let n1 = 0;
   let n2 = 1;
