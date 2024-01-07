@@ -264,7 +264,7 @@ console.log(numArray);
 
 ```javascript
 
-function balikKata(kata) {
+const balikKata = (kata) => {
 
   //code
 
@@ -275,9 +275,9 @@ console.log(balikKata('beca di jalan malioboro')); expected oroboilam nalaj aceb
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-function balikKata(kata) {
+const balikKatam = (kata) => {
   return kata.split("").reverse().join("");
-}
+};
 
 console.log(balikKata("beca di jalan malioboro"));
 ```
