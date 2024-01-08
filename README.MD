@@ -275,7 +275,7 @@ console.log(balikKata('beca di jalan malioboro')); expected oroboilam nalaj aceb
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-const balikKatam = (kata) => {
+const balikKata = (kata) => {
   return kata.split("").reverse().join("");
 };
 
@@ -330,7 +330,7 @@ console.log(fizzBuzz(20));
 
 ```javascript
 
-function cetakSegitigasSiku(tinggi) {
+const cetakSegitigasSiku = (tinggi) => {
 
   //code
 
@@ -348,7 +348,7 @@ expected
 
 ```javascript
 jika bintang 1 yg diatas
-function cetakSegitigaSiku(tinggi) {
+const cetakSegitigaSiku = (tinggi) => {
   for (let i = 1; i <= tinggi; i++) {
     let baris = '';
     for (let j = 1; j <= i; j++) {
