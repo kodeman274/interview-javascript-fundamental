@@ -394,18 +394,18 @@ expected
 ##### 9. Tulis fungsi untuk isEven(numbers, n), tentukan apakah element atau digit ke n dalam sebuah array deret adalah bilangan genap
 
 ```javascript
-function isEven(numbers, n) {
+const isEven = (numbers, n) => {
   //code
-}
+};
 console.log(`Apakah angka ke-${n} genap? ${result}`);
 ```
 
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-function isEven(numbers, n) {
+const isEven = (numbers, n) => {
   return n >= 0 && n < numbers.length && numbers[n] % 2 === 0;
-}
+};
 
 // Contoh penggunaan:
 const deretAngka = [2, 4, 6, 8, 10];
