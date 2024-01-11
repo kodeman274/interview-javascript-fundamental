@@ -502,7 +502,7 @@ console.log(findLargestNumber(numbers2)); // Output: 21
 
 ```javascript
 
-function hitungFaktorial(n) {
+const hitungFaktorial = (n) => {
 
 }
 
@@ -518,7 +518,7 @@ console.log("Faktorial dari 5 adalah:", hasilFaktorial5);  // Output: 120
 hint: faktorial yaitu mengalikan semua bilangan dari 1 ke n misal 5 = 5 * 4 * 3 * 2 * 1
 
 
-function hitungFaktorial(n) {
+const hitungFaktorial = (n) => {
     if ( n === 0 || n === 1) {
         return 1;
     } else {
