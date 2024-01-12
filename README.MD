@@ -539,7 +539,7 @@ console.log("Faktorial dari 8 adalah:", hasilFaktorial8);  // Output: 40320
 
 ```javascript
 
-function mergeSortedArrays(arr1, arr2) {
+const mergeSortedArrays = (arr1, arr2) => {
 
 }
 
@@ -553,7 +553,7 @@ console.log("Hasil Gabungan:", hasilGabungan);  // Output: [1, 2, 3, 4, 5, 6]
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-function mergeSortedArrays(arr1, arr2) {
+const mergeSortedArrays = (arr1, arr2) => {
   let mergedArray = [];
   let i = 0;
   let j = 0;
@@ -581,7 +581,7 @@ function mergeSortedArrays(arr1, arr2) {
   }
 
   return mergedArray;
-}
+};
 
 // Contoh penggunaan fungsi:
 const arr1 = [1, 3, 5];
