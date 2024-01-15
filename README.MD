@@ -423,7 +423,7 @@ console.log(`Apakah angka ke-${n} genap? ${result}`);
 
 ```javascript
 
-function twoSum(arr, S){
+const twoSum = (arr, S) => {
 
   //code
 hint: Pendekatan yang simpel terhadap masalah ini adalah dengan mengulang setiap angka dan kemudian
@@ -438,7 +438,7 @@ console.log(twoSum([3, 5, 2, -4, 8, 11], 7))
 ```javascript
 // fungsi penjumlahan dua kita yang akan dikembalikan
 // semua pasangan dalam array yang berjumlah S
-function twoSum(arr, S) {
+const twoSum = (arr, S) => {
   var sums = [];
 
   // periksa setiap elemen dalam array
@@ -454,7 +454,7 @@ function twoSum(arr, S) {
 
   // mengembalikan semua pasangan bilangan bulat yang berjumlah S
   return sums;
-}
+};
 
 console.log(twoSum([3, 5, 2, -4, 8, 11], 7));
 ```
@@ -466,7 +466,7 @@ console.log(twoSum([3, 5, 2, -4, 8, 11], 7));
 ##### 11. Tulis sebuah fungsi JavaScript untuk menemukan dan mengembalikan bilangan terbesar dalam sebuah larik bilangan bulat.
 
 ```javascript
-function findLargestNumber(arr) {}
+const findLargestNumber = (arr) => {};
 const numbers1 = [12, 5, 27, 8, 16];
 console.log(findLargestNumber(numbers1)); // Output: 27
 ```
@@ -474,7 +474,7 @@ console.log(findLargestNumber(numbers1)); // Output: 27
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-function findLargestNumber(arr) {
+const findLargestNumber = (arr) => {
   if (arr.length === 0) {
     return "larik kosong";
   }
@@ -488,7 +488,7 @@ function findLargestNumber(arr) {
   }
 
   return largestNumber;
-}
+};
 
 const numbers2 = [4, 11, 9, 3, 21];
 console.log(findLargestNumber(numbers2)); // Output: 21
