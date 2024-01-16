@@ -598,7 +598,7 @@ console.log("Hasil Gabungan:", hasilGabungan); // Output: [1, 2, 3, 4, 5, 6]
 
 ```javascript
 
-function isAnagram(str1, str2) {
+const isAnagram = (str1, str2) => {
 
 hint: Anagram adalah dua string yang memiliki huruf yang sama, jumlah huruf yang sama, tetapi urutan hurufnya berbeda. Misalnya, "listen" dan "silent"
 
@@ -614,7 +614,7 @@ expected console.log(`Apakah "${string1}" dan "${string2}" anagram?`, isAnagramR
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-function isAnagram(str1, str2) {
+function isAnagram = (str1, str2)  =>{
   // Menghapus spasi dan mengonversi ke huruf kecil untuk memastikan keakuratan
   const cleanStr1 = str1.replace(/\s/g, "").toLowerCase();
   const cleanStr2 = str2.replace(/\s/g, "").toLowerCase();
