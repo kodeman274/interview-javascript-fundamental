@@ -642,7 +642,7 @@ console.log(`Apakah "${string1}" dan "${string2}" anagram?`, isAnagramResult); /
 
 ```javascript
 
-function removeDuplicates(arr) {
+const removeDuplicates = (arr) => {
 
 }
 
@@ -655,11 +655,11 @@ console.log("Array setelah menghapus duplikat:", resultArray); // Output [1,2,3,
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-function removeDuplicates(arr) {
+const removeDuplicates = (arr) => {
   // Menggunakan Set untuk mendapatkan elemen unik
   const uniqueArray = [...new Set(arr)];
   return uniqueArray;
-}
+};
 
 // Contoh penggunaan fungsi:
 const inputArray = [1, 2, 2, 3, 4, 4, 5];
