@@ -675,7 +675,7 @@ console.log("Array setelah menghapus duplikat:", resultArray); //  Output [1,2,3
 
 ```javascript
 
-function countingSort(arr) {
+conts countingSort = (arr) => {
 
 }
 
@@ -688,7 +688,7 @@ console.log("Array setelah Counting Sort:", resultArray); // Output [1,2,2,3,3,4
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-function countingSort(arr) {
+const countingSort = (arr) => {
   // Menemukan nilai maksimum dalam larik
   const max = Math.max(...arr);
 
@@ -710,7 +710,7 @@ function countingSort(arr) {
   }
 
   return sortedArray;
-}
+};
 
 // Contoh penggunaan fungsi:
 const inputArray = [4, 2, 3, 1, 4, 2, 3];
