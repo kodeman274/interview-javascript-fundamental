@@ -675,7 +675,7 @@ console.log("Array setelah menghapus duplikat:", resultArray); //  Output [1,2,3
 
 ```javascript
 
-conts countingSort = (arr) => {
+const countingSort = (arr) => {
 
 }
 
@@ -726,7 +726,7 @@ console.log("Array setelah Counting Sort:", resultArray); //  Output [1,2,2,3,3,
 
 ```javascript
 
-function binarySearch(sortedArray, target) {
+const binarySearch = (sortedArray, target) => {
 
  hint: Binary Search adalah metode pencarian efisien yang hanya dapat diterapkan pada larik terurut.
 
@@ -749,7 +749,7 @@ if (resultIndex !== -1) {
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-function binarySearch(sortedArray, target) {
+const binarySearch = (sortedArray, target) => {
   let left = 0;
   let right = sortedArray.length - 1;
 
@@ -766,7 +766,7 @@ function binarySearch(sortedArray, target) {
   }
 
   return -1; // Nilai tidak ditemukan
-}
+};
 
 expected; // Contoh penggunaan fungsi:
 const sortedArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
