@@ -975,7 +975,7 @@ console.log("Breadth-First Search Result:", bfsResult);
 ##### 20. terdapat sebuah larik yang berisi n bilangan bulat dari 0 hingga n, dengan satu bilangan hilang, tulis sebuah fungsi untuk menemukan bilangan yang hilang.
 
 ```javascript
-function findMissingNumber(nums) {
+const findMissingNumber = (nums) => {
 
    hint:  menggunakan konsep XOR (eXclusive OR) => Konsep XOR (eXclusive OR) adalah operasi biner yang menghasilkan nilai 1 pada bit tertentu jika hanya satu dari dua bit yang setara dengan 1. Jika kedua bit adalah 0 atau 1, hasilnya adalah 0.
 
@@ -992,7 +992,7 @@ console.log('Bilangan yang hilang:', missingNumber);
 <details><summary><b>Solution</b></summary>
 
 ```javascript
-function findMissingNumber(nums) {
+const findMissingNumber = (nums) => {
   const n = nums.length + 1; // Ukuran deret seharusnya
   let xorTotal = 0;
 
@@ -1007,7 +1007,7 @@ function findMissingNumber(nums) {
   }
 
   return xorTotal;
-}
+};
 
 expected; // Contoh penggunaan:
 const numbers = [0, 1, 3, 4, 5];
