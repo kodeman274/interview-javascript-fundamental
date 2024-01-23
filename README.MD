@@ -1023,7 +1023,7 @@ console.log("Bilangan yang hilang:", missingNumber);
 ##### 21. terdapat larik weights yang menyimpan bobot dari setiap elemen, dan larik values yang menyimpan nilai dari setiap elemen. Implementasikan sebuah fungsi dalam JavaScript untuk menyelesaikan masalah knapsack
 
 ```javascript
-function knapsack(weights, values, capacity) {
+const knapsack = (weights, values, capacity) => {
 
    hint:  Fungsi ini harus mengambil kapasitas maksimal knapsack dan mengembalikan nilai maksimum yang dapat diambil dengan memilih elemen-elemen tertentu
   // Implementasi fungsi di sini
@@ -1042,7 +1042,7 @@ console.log(knapsack(weights, values, capacity)); // Output yang diharapkan: 28
 
 ```javascript
 
-function knapsack(weights, values, capacity) {
+const knapsack = (weights, values, capacity) => {
   const n = weights.length;
   const dp = new Array(n + 1).fill(null).map(() => new Array(capacity + 1).fill(0));
 
