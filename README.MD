@@ -1020,7 +1020,7 @@ console.log("Bilangan yang hilang:", missingNumber);
 
 ---
 
-##### 21. terdapat larik weights yang menyimpan bobot dari setiap elemen, dan larik values yang menyimpan nilai dari setiap elemen. Implementasikan sebuah fungsi dalam JavaScript untuk menyelesaikan masalah knapsack
+##### 21. terdapat sebuah larik weights yang menyimpan bobot dari setiap elemen, dan larik values yang menyimpan nilai dari setiap elemen. Implementasikan sebuah fungsi dalam JavaScript untuk menyelesaikan masalah knapsack
 
 ```javascript
 const knapsack = (weights, values, capacity) => {
