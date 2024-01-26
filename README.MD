@@ -367,7 +367,7 @@ expected
 *****
 
 jika bintang 1 yg dibawah
-function cetakSegitigaSikuBintang(tinggi) {
+const cetakSegitigaSikuBintang = (tinggi) => {
   for (let i = tinggi; i >= 1; i--) {
     let baris = '';
     for (let j = 1; j <= i; j++) {
