@@ -237,7 +237,7 @@ console.log(num_Array);
 console.log(num_Array.length);
 
 cara lain dengan perulangan looping
-const dataArrayy = [9, 3, 6, 4, 2, 5, 6, 3, 1, 2, 7, 8, 8, 6, 5, 22, 7];
+const dataArray = [9, 3, 6, 4, 2, 5, 6, 3, 1, 2, 7, 8, 8, 6, 5, 22, 7];
 
 const numCount = {};
 const numArray = [];
