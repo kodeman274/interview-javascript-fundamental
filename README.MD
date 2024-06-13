@@ -1,4 +1,4 @@
-# Exercise Javascript Interview
+# Exercise Javascript Interview questions
 
 <div align="center">
   
