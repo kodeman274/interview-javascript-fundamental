@@ -1,5 +1,8 @@
 # Exercise Javascript Interview questions
 
+**Do the problem first until it's finished, if you don't get results, then learn the steps to do it**
+
+
 <div align="center">
   
   <h1>JS Submissions Solutions</h1>
