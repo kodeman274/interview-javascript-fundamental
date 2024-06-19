@@ -13,7 +13,8 @@
 ```javascript
 const isPalindrom = (str) => {
 
-  hint: Palindrom yaitu kata, bilangan, frasa, atau susunan karakter lain yang serupa jika dibaca dengan urutan terbalik
+  **hint: Palindrom yaitu kata, bilangan, frasa, atau susunan karakter lain yang serupa jika dibaca 
+dengan urutan terbalik**
   //code
   return;
 };
