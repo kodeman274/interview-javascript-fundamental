@@ -431,8 +431,8 @@ console.log(`Apakah angka ke-${n} genap? ${result}`);
 const twoSum = (arr, S) => {
 
   //code
-hint: Pendekatan yang simpel terhadap masalah ini adalah dengan mengulang setiap angka dan kemudian
-mengulangi lagi melalui array
+**hint: Pendekatan yang simpel terhadap masalah ini adalah dengan mengulang 
+setiap angka dan kemudian mengulangi lagi melalui array**
 
 }
 console.log(twoSum([3, 5, 2, -4, 8, 11], 7))
