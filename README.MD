@@ -733,7 +733,8 @@ console.log("Array setelah Counting Sort:", resultArray); //  Output [1,2,2,3,3,
 
 const binarySearch = (sortedArray, target) => {
 
- hint: Binary Search adalah metode pencarian efisien yang hanya dapat diterapkan pada larik terurut.
+ **hint: Binary Search adalah metode pencarian efisien yang hanya dapat 
+diterapkan pada larik terurut.**
 
 }
 
@@ -795,7 +796,8 @@ if (resultIndex !== -1) {
 class Graph {
         constructor() {
 
-           hint: DFS adalah algoritma pencarian yang digunakan untuk menjelajah atau mencari informasi dalam graf atau struktur data lainnya
+          **hint: DFS adalah algoritma pencarian yang digunakan untuk 
+menjelajah atau mencari informasi dalam graf atau struktur data lainnya**
 
         }
 
