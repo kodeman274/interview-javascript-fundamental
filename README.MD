@@ -892,7 +892,8 @@ console.log("Depth-First Search Result:", dfsResult);
 class Graph {
         constructor() {
 
-hint: BFS adalah algoritma pencarian yang digunakan untuk menjelajah atau mencari informasi dalam graf atau struktur data lainnya
+**hint: BFS adalah algoritma pencarian yang digunakan untuk menjelajah 
+atau mencari informasi dalam graf atau struktur data lainnya**
         }
 
 }
