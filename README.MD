@@ -13,8 +13,8 @@
 ```javascript
 const isPalindrom = (str) => {
 
-  **hint: Palindrom yaitu kata, bilangan, frasa, atau susunan karakter lain yang serupa jika dibaca 
-dengan urutan terbalik**
+  **hint: Palindrom yaitu kata, bilangan, frasa, atau susunan karakter lain yang 
+serupa jika dibaca dengan urutan terbalik**
   //code
   return;
 };
@@ -605,7 +605,9 @@ console.log("Hasil Gabungan:", hasilGabungan); // Output: [1, 2, 3, 4, 5, 6]
 
 const isAnagram = (str1, str2) => {
 
-hint: Anagram adalah dua string yang memiliki huruf yang sama, jumlah huruf yang sama, tetapi urutan hurufnya berbeda. Misalnya, "listen" dan "silent"
+**hint: Anagram adalah dua string yang memiliki huruf yang sama, 
+jumlah huruf yang sama, tetapi urutan hurufnya berbeda. 
+Misalnya, "listen" dan "silent"**
 
 }
 
