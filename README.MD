@@ -987,7 +987,10 @@ console.log("Breadth-First Search Result:", bfsResult);
 ```javascript
 const findMissingNumber = (nums) => {
 
-   hint:  menggunakan konsep XOR (eXclusive OR) => Konsep XOR (eXclusive OR) adalah operasi biner yang menghasilkan nilai 1 pada bit tertentu jika hanya satu dari dua bit yang setara dengan 1. Jika kedua bit adalah 0 atau 1, hasilnya adalah 0.
+   **hint:  menggunakan konsep XOR (eXclusive OR) => Konsep XOR (eXclusive OR) 
+adalah operasi biner yang menghasilkan nilai 1 pada bit 
+tertentu jika hanya satu dari dua bit yang setara dengan 1. 
+Jika kedua bit adalah 0 atau 1, hasilnya adalah 0.**
 
 
 }
