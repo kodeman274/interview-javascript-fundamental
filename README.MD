@@ -1038,7 +1038,9 @@ console.log("Bilangan yang hilang:", missingNumber);
 ```javascript
 const knapsack = (weights, values, capacity) => {
 
-   hint:  Fungsi ini harus mengambil kapasitas maksimal knapsack dan mengembalikan nilai maksimum yang dapat diambil dengan memilih elemen-elemen tertentu
+   **hint:  Fungsi ini harus mengambil kapasitas maksimal knapsack
+dan mengembalikan nilai maksimum yang dapat diambil 
+dengan memilih elemen-elemen tertentu**
   // Implementasi fungsi di sini
 }
 
