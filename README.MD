@@ -8,7 +8,7 @@
   <h1>JS Submissions Solutions</h1>
 </div>
 
-##### 1. Tulis fungsi untuk isPalindrom menerima string sebagai argument. Fungsi ini membersihkan string dari karakter non-alfanumerik, mengubahnya menjadi huruf kecil, dan kemudian memeriksa apakah string yang dibalik sama dengan string aslinya
+##### 1. Tuliskan fungsi untuk isPalindrom menerima string sebagai argument. Fungsi ini membersihkan string dari karakter non-alfanumerik, mengubahnya menjadi huruf kecil, dan kemudian memeriksa apakah string yang dibalik sama dengan string aslinya
 
 ```javascript
 const isPalindrom = (str) => {
@@ -58,7 +58,7 @@ const isPalindrom = () => {
 
 ---
 
-##### 2. Tulis perulangan untuk Fibonacci
+##### 2. Tuliskan perulangan untuk Fibonacci
 
 ```javascript
 const generateFibonnacci = (n) => {
@@ -112,7 +112,7 @@ console.log(num_Fibonannacci);
 
 ---
 
-##### 3. Tulis perulangan yang memisahkan angka genap dan ganjil sampai 100 kmmbalikan hasilnya
+##### 3. Tuliskan perulangan yang memisahkan angka genap dan ganjil sampai 100 kmmbalikan hasilnya
 
 ```javascript
 
@@ -156,7 +156,7 @@ console.log({ num_Genap, num_Ganjil })
 
 ---
 
-##### 4. Tulis perulangan menampilkan bilangan prima
+##### 4. Tuliskan perulangan menampilkan bilangan prima
 
 ```javascript
 
@@ -196,7 +196,7 @@ console.log(num_Prima);
 
 ---
 
-##### 5. Tulis perulangan yang menampilkan data array yang double
+##### 5. Tuliskan perulangan yang menampilkan data array yang double
 
 ```javascript
 
@@ -264,7 +264,7 @@ console.log(numArray);
 
 ---
 
-##### 6. Tulis fungsi yang menampilkan kata yang dibalik (reverse)
+##### 6. Tuliskan fungsi yang menampilkan kata yang dibalik (reverse)
 
 ```javascript
 
@@ -290,7 +290,7 @@ console.log(balikKata("beca di jalan malioboro"));
 
 ---
 
-##### 7. Tulis perulangan untuk Fizz Buzz
+##### 7. Tuliskan perulangan untuk Fizz Buzz
 
 ```javascript
 
@@ -331,7 +331,7 @@ console.log(fizzBuzz(20));
 
 ---
 
-##### 8. Tulis fungsi untuk cetakSegitigasSiku
+##### 8. Tuliskan fungsi untuk cetakSegitigasSiku
 
 ```javascript
 
@@ -396,7 +396,7 @@ expected
 
 ---
 
-##### 9. Tulis fungsi untuk isEven(numbers, n), tentukan apakah element atau digit ke n dalam sebuah array deret adalah bilangan genap
+##### 9. Tuliskan fungsi untuk isEven(numbers, n), tentukan apakah element atau digit ke n dalam sebuah array deret adalah bilangan genap
 
 ```javascript
 const isEven = (numbers, n) => {
@@ -424,7 +424,7 @@ console.log(`Apakah angka ke-${n} genap? ${result}`);
 
 ---
 
-##### 10. Tulis fungsi TwoSum jika arraynya adalah [3, 5, 2, -4, 8, 11] dan jumlahnya 7, program Anda harus mengembalikan [[11, -4], [2, 5]] karena 11 + -4 = 7 dan 2 + 5 = 7
+##### 10. Tuliskan fungsi TwoSum jika arraynya adalah [3, 5, 2, -4, 8, 11] dan jumlahnya 7, program Anda harus mengembalikan [[11, -4], [2, 5]] karena 11 + -4 = 7 dan 2 + 5 = 7
 
 ```javascript
 
@@ -468,7 +468,7 @@ console.log(twoSum([3, 5, 2, -4, 8, 11], 7));
 
 ---
 
-##### 11. Tulis sebuah fungsi JavaScript untuk menemukan dan mengembalikan bilangan terbesar dalam sebuah larik bilangan bulat.
+##### 11. Tuliskan sebuah fungsi JavaScript untuk menemukan dan mengembalikan bilangan terbesar dalam sebuah larik bilangan bulat.
 
 ```javascript
 const findLargestNumber = (arr) => {};
@@ -503,7 +503,7 @@ console.log(findLargestNumber(numbers2)); // Output: 21
 
 ---
 
-##### 12. Tulis sebuah fungsi untuk menghitung faktorial dari sebuah bilangan. Faktorial dari n adalah produk semua bilangan bulat positif dari 1 hingga n.
+##### 12. Tuliskan sebuah fungsi untuk menghitung faktorial dari sebuah bilangan. Faktorial dari n adalah produk semua bilangan bulat positif dari 1 hingga n.
 
 ```javascript
 
@@ -540,7 +540,7 @@ console.log("Faktorial dari 8 adalah:", hasilFaktorial8);  // Output: 40320
 
 ---
 
-##### 13. terdapat dua larik terurut, tulis sebuah fungsi untuk menggabungkan keduanya menjadi sebuah larik terurut. misal [1,3,5] & [2,4,6]
+##### 13. terdapat dua larik terurut, tuliskan sebuah fungsi untuk menggabungkan keduanya menjadi sebuah larik terurut. misal [1,3,5] & [2,4,6]
 
 ```javascript
 
@@ -599,7 +599,7 @@ console.log("Hasil Gabungan:", hasilGabungan); // Output: [1, 2, 3, 4, 5, 6]
 
 ---
 
-##### 14. Tulis sebuah fungsi untuk memeriksa apakah dua string adalah anagram, yaitu memiliki huruf yang sama dalam urutan yang berbeda.
+##### 14. Tuliskan sebuah fungsi untuk memeriksa apakah dua string adalah anagram, yaitu memiliki huruf yang sama dalam urutan yang berbeda.
 
 ```javascript
 
@@ -645,7 +645,7 @@ console.log(`Apakah "${string1}" dan "${string2}" anagram?`, isAnagramResult); /
 
 ---
 
-##### 15. terdapat sebuah larik yang mungkin berisi elemen duplikat, tulis sebuah fungsi untuk menghapus elemen duplikat tersebut dan mengembalikan larik baru yang hanya berisi elemen unik.
+##### 15. terdapat sebuah larik yang mungkin berisi elemen duplikat, tuliskan sebuah fungsi untuk menghapus elemen duplikat tersebut dan mengembalikan larik baru yang hanya berisi elemen unik.
 
 ```javascript
 
@@ -982,7 +982,7 @@ console.log("Breadth-First Search Result:", bfsResult);
 
 ---
 
-##### 20. terdapat sebuah larik yang berisi n bilangan bulat dari 0 hingga n, dengan satu bilangan hilang, tulis sebuah fungsi untuk menemukan bilangan yang hilang.
+##### 20. terdapat sebuah larik yang berisi n bilangan bulat dari 0 hingga n, dengan satu bilangan hilang, tuliskan sebuah fungsi untuk menemukan bilangan yang hilang.
 
 ```javascript
 const findMissingNumber = (nums) => {
