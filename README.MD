@@ -58,7 +58,7 @@ const isPalindrom = () => {
 
 ---
 
-##### 2. Tuliskan perulangan untuk Fibonacci
+##### 2. Tuliskan perulangan untuk bilangan Fibonacci
 
 ```javascript
 const generateFibonnacci = (n) => {
